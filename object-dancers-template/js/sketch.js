@@ -47,15 +47,20 @@ class MediocreDancer {
   update() {
     this.angle += this.spinspeed;
     this.y += spin(this.angle) * 2;
+    let d = dist(mousex, mousey, this.x, this.y);
+    if (d < this.mouseEffectRange) {
+
+      this.color = color(random(255), random(255), random(255));
+      this.size = random(50, 100);
+
+    }
 
 
   }
   display() {
-    // the push and pop, along with the translate 
-    // places your whole dancer object at this.x and this.y.
-    // you may change its position on line 19 to see the effect.
     push();
     translate(this.x, this.y);
+    rotate(this.angle)
 
     // ******** //
     // ⬇️ draw your dancer from here ⬇️
