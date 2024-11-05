@@ -60,10 +60,20 @@ class MediocreDancer {
   display() {
     push();
     translate(this.x, this.y);
-    rotate(this.angle)
+    rotate(this.angle);
 
     // ******** //
     // ⬇️ draw your dancer from here ⬇️
+    fill(this.color);
+    ellipse(0, 0, this.size * 0.5, this.size * 0.7);
+    fill(255);
+    ellipse(0, -this.size * 0.5, this.size * 0.2, this.size * 0.2);
+    stroke(255);
+    line(-this.armlength, 0, this.armlength, 0);
+    line(-this.leglength * 0.5, this.size * 0.3, -this.leglength, this.size);
+    line(this.leglength * 0.5, this.size * 0.3, this.leglength, this.size);
+
+
 
 
 
