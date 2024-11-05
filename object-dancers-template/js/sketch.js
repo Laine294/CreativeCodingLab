@@ -18,7 +18,7 @@ function setup() {
   canvas.parent("p5-canvas-container");
 
   // ...except to adjust the dancer's name on the next line:
-  dancer = MediocreDancer(width / 2, height / 2);
+  dancer = new MediocreDancer(width / 2, height / 2);
 }
 
 function draw() {
