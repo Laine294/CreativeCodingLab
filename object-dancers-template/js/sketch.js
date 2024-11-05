@@ -47,7 +47,7 @@ class MediocreDancer {
   update() {
     this.angle += this.spinspeed;
     this.y += sin(this.angle) * 2;
-    let d = dist(mousex, mousey, this.x, this.y);
+    let d = dist(mouseX, mouseY, this.x, this.y);
     if (d < this.mouseEffectRange) {
 
       this.color = color(random(255), random(255), random(255));
