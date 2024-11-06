@@ -1,31 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANCER WORMS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/lib/p5.js" type="text.javascript"></script>
 
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js"></script>
-    <title>I'm stuck in Shanghai</title>
 </head>
 
 <body>
-    <div id="p5_canvas_container"></div>
+    <!-- title -->
+    <div id="title-wrapper">
+        <h1 class="red">DANCER WORMS</h1>
+    </div>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js"></script>
+    <!-- main content -->
+    <div id="p5-cont">
+        <canvas id="my_canvas" class="p5Canvas" width="1600" height="1000"
+            style="width: 800px; height: 500px;"></canvas>
+    </div>
+    <div id="main-wrapper">
+        <div id="p5-canvas-container">
+            <!-- We temporarily use a placeholder image here. -->
+            <img src="canvas_placeholder.png" alt="">
+        </div>
+        <div class="two-columns">
+            <div class="left">
+                <h3 class="red">Scientific Name:</h3>
+                <p>Vermis Saltatorius</p>
 
-    <div id="title">
-        <h1> help me I'm laine</h1>
+                <h3 class="red">Discovered by / at:</h3>
+                <p>First documented in 1879 by Dr. Elara Finch</p>
+
+                <h3 class="green">Family:</h3>
+                <p>The family Saltatoridae is composed of unique aquatic invertebrates known for their rhythmic,
+                    dance-like locomotion. Often called “Saltators,” members of Saltatoridae exhibit movement patterns
+                    that resemble fluid dances, enabling them to maneuver gracefully through water. This distinctive
+                    movement has led to their colloquial name as the "Dancing Worm Family."</p>
+            </div>
+            <div class="right">
+                <h3 class="green">Habitat:</h3>
+                <p>Dancer worms thrive in the damp, shadowed waters of marshlands and slow-moving rivers, especially in
+                    regions with high mineral content. The Indigo Marshlands, where they were first discovered, remain
+                    their primary habitat, but they have since been found in scattered locations across dense, humid
+                    Ecosystems.</p>
+
+                <h3 class="green">Appearance:</h3>
+                <p>Thin, faintly glowing stripes run along the sides of their bodies, intensifying near the head and
+                    tail. This glow is emitted by specialized light-producing cells known as luminocytes, which are also
+                    responsible for their communication through “Lumen Language".</p>
+
+                <h3 class="green">Key Characteristics:</h3>
+                <ul>
+                    <li>5 to 15 cm in length</li>
+                    <li>Vivid bioluminescence</li>
+                    <li>Unique movement pattern</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="one-column">
+            <p>
+                <span class="yellow">What we know so far about Vermis Saltatorius?</span>
+                Dancer worms are believed to communicate through subtle shifts in their glow intensity, a phenomenon
+                referred to as “Lumen Language” by researchers. This bioluminescent language is theorized to play a role
+                in mating displays, group coordination, and even warning signals when predators approach. Though most
+                commonly found in shallow marshes, recent discoveries suggest they may also inhabit deep oceanic
+                trenches, where their unique glow and synchronized movements would be beneficial in the dark.
+                <br>
+
+                <span class="yellow">Guidelines for human interaction with this creature</span>
+                <li> Avoid Direct
+                    Touching: Due to their delicate bodies and highly sensitive skin, Dancer worms can be easily harmed
+                    by
+                    direct contact. Observers are encouraged to use special tools or gloves if handling them is
+                    essential.</li>
+
+
+                <li> No Bright Lights: Dancer worms are light-sensitive and can be disoriented or harmed by bright,
+                    artificial lights. Visitors are advised to use low-level lighting and avoid flash photography to
+                    respect
+                    the worms' natural light rhythm.</li>
+
+
+                <li>Observe from a Distance: When Dancer worms congregate in their "dance formations," disrupting their
+                    movement can interfere with their social behaviors. Observing from a respectful distance allows them
+                    to
+                    move undisturbed.</li>
+
+
+                <li>Do Not Remove from Habitat: Dancer worms have proven difficult to sustain outside of their native
+                    environments, and removal can result in their death and disrupt local ecosystems. Conservation
+                    guidelines prohibit capturing or relocating these worms.</li>
+
+
+                <li>Join During "Lumen Festivals": Many reserves host controlled “Lumen Festival” viewings, where small
+                    groups of visitors can witness the worms’ mesmerizing displays safely.</li>
+            </p>
+        </div>
     </div>
 
-    <div id="content">
-
-        <p class="like"> I love sleeping</p>
-        <p onmouseover="hoverText()">I love eating and cooking</p>
-
-        <button onclick="console.log('clicked!');alert('i am doing stuff')"> click me!!! </button>
+    <!-- Footer -->
+    <div id="footer" class="red">
+        <p>A CCLab project made by Laine in Fall 2024</p>
     </div>
-    <a href="project.html">projects</a>
-    <script src="js/script.js"></script>
+
+    <!-- Home: Link back to the ATLAS page-->
+    <div id="home">
+        <a href="https://cclab.work/atlas">Back to the ATLAS</a>
+    </div>
+
+    <!-- Include your sketch.js file here -->
+    <script src="js/sketch.js" type="text/javascript"> </script>
 </body>
 
 </html>

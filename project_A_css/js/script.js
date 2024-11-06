@@ -7,7 +7,8 @@ let changeDuration = 3000;
 let lastChange = 0;
 
 function setup() {
-    createCanvas(800, 500);
+    let canvas = createCanvas(800, 500);
+    canvas.id("p5-canvas")
     textAlign(CENTER, CENTER);
 
     xScale = width / 20;
